@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-span, h1, h2 {
+span, h1, h2, li {
   font-family: 'PingFang TC Semibold', 'PingFang TC';
 }
 
@@ -12,6 +12,37 @@ a {
   text-decoration: none;
 }
 
+hr{
+  height: 1px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .content {
-  padding-top: 200px;
+  padding-top: 200px + 30px;
+  width: 1024px;
+
+  * {
+    color: #333;
+  }
+}
+
+h1.title {
+  display: inline-block;
+  font-size: 32px;
+  border-bottom: 3px solid #333;
+  margin-bottom: 25px;
+  font-weight: 700;
+  align-items: flex-start;
+
+  > span {
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
 }

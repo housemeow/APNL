@@ -1,3 +1,57 @@
 @import "common";
 @import "components/nav";
 @import "components/header";
+
+div.home {
+  > ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    > li > a {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 20px;
+      border-bottom: 3px solid transparent;
+      color: #666;
+    }
+
+    > li.active > a,
+    > li:hover > a {
+      color: #333;
+      border-bottom: 3px solid #333;
+    }
+  }
+
+  > div.news {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+
+    > table {
+      thead > tr {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      tbody > tr {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+
+      thead > tr, tbody > tr {
+        display: flex;
+      }
+
+      thead > tr > td:nth-child(1),
+      tbody > tr > td:nth-child(1) {
+        width: 150px;
+      }
+
+      thead > tr > td:nth-child(2),
+      tbody > tr > td:nth-child(2) {
+        flex: 1;
+      }
+    }
+  }
+}
